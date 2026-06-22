@@ -1,6 +1,7 @@
 #products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 .product-img {
     height: 350px;
@@ -14,6 +15,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 /* add multiple selector at once by separating them with commas*/
 .vase-name,
@@ -22,4 +24,16 @@
 .vase-price,
 .vase-quantity {
     font-size: 25px;
+}
+#content-wrapper {
+    display: flex;
+}
+aside {
+    width:200px;
+}
+main {
+    flex: 1;
+}
+body {
+    padding: 30px;
 }

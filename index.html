@@ -24,94 +24,96 @@
         </nav>
 
     </header>
-    <main>
-        <!--Parent container to sort search by vase type and price from lowest to highest-->
-        <div id="sort-dropdown-menu">
-            <!--Dropdown menu list to sort the different types of vases-->
-            <div id="sort-dropdown-type">
-                <select name="Type" id="vase-type">
-                    <option value="all">all</option>
-                    <option value="wooden">wooden</option>
-                    <option value="cement">cement</option>
-                    <option value="ceramic">ceramic</option>
-                </select>
-            </div>
-            <!--Dropdown menu list to sort from lowest to highest-->
-            <div id="sort-dropdown-price">
-                <select name="highest-lowest" id="vase-price">
-                    <option value="sort-by-price">Sort by price</option>
-                    <option value="highest">highest</option>
-                    <option value="lowest">lowest</option>
+    <div id="content-wrapper">
+        <main>
+            <!--Parent container to sort search by vase type and price from lowest to highest-->
+            <div id="sort-dropdown-menu">
+                <!--Dropdown menu list to sort the different types of vases-->
+                <div id="sort-dropdown-type">
+                    <select name="Type" id="vase-type">
+                        <option value="all">all</option>
+                        <option value="wooden">wooden</option>
+                        <option value="cement">cement</option>
+                        <option value="ceramic">ceramic</option>
+                    </select>
+                </div>
+                <!--Dropdown menu list to sort from lowest to highest-->
+                <div id="sort-dropdown-price">
+                    <select name="highest-lowest" id="vase-price">
+                        <option value="sort-by-price">Sort by price</option>
+                        <option value="highest">highest</option>
+                        <option value="lowest">lowest</option>
 
-                </select>
+                    </select>
+                </div>
             </div>
-        </div>
-        <!--Home page with all products (vases) already structured and with prices-->
-        <section id="products">
-            <div id="ceramic-vase1" class="products ceramic">
-                <p class="vase-name">Magic Realm</p>
-                <img src="ceramic_vase1.png" alt="photo of a vase" class="product-img">
-                <p class="vase-price">$108.50</p>
-                <button class="minus">-</button>
-                <p id="ceramic-vase-quantity-1" class="vase-quantity">0</p>
-                <button class="plus">+</button>
-            </div>
-            <div id="ceramic-vase2" class="products ceramic">
-                <p class="vase-name">Mystical</p>
-                <img src="ceramic_vase2.png" alt="photo of a vase" class="product-img">
-                <p class="vase-price">$108.50</p>
-                <button class="minus">-</button>
-                <p id="ceramic-vase-quantity-2" class="vase-quantity">0</p>
-                <button class="plus">+</button>
-            </div>
-            <div id="cement-vase1" class="products cement">
-                <p class="vase-name">Mayane Starlight</p>
-                <img src="cement_vase1.png" alt="photo of a cement vase" class="product-img">
-                <p class="vase-price">$98.50</p>
-                <button class="minus">-</button>
-                <p id="cement-vase-quantity-1" class="vase-quantity">0</p>
-                <button class="plus">+</button>
-            </div>
-            <div id="cement-vase2" class="products cement">
-                <p class="vase-name">Bryenne Waterfall</p>
-                <img src="cement_vase2.png" alt="photo of a cement vase" class="product-img">
-                <p class="vase-price">$98.50</p>
-                <button class="minus">-</button>
-                <p id="cement-vase-quantity-2" class="vase-quantity">0</p>
-                <button class="plus">+</button>
-            </div>
-            <div id="wooden-vase1" class="products wooden">
-                <p class="vase-name">Treehouse</p>
-                <img src="wooden_vase1.png" alt="photo of a wooden vase" class="product-img">
-                <p class="vase-price">$150.00</p>
-                <button class="minus">-</button>
-                <p id="wooden-vase-quantity-1" class="vase-quantity">0</p>
-                <button class="plus">+</button>
-            </div>
-            <div id="wooden-vase2" class="products wooden">
-                <p class="vase-name">Soft Pine Vase</p>
-                <img src="wooden_vase2.png" alt="photo of a wooden vase" class="product-img">
-                <p class="vase-price">$150.00</p>
-                <button class="minus">-</button>
-                <p id="wooden-vase-quantity-2" class="vase-quantity">0</p>
-                <button class="plus">+</button>
-            </div>
+            <!--Home page with all products (vases) already structured and with prices-->
+            <section id="products">
+                <div id="ceramic-vase1" class="products ceramic">
+                    <p class="vase-name">Magic Realm</p>
+                    <img src="ceramic_vase1.png" alt="photo of a vase" class="product-img">
+                    <p class="vase-price">$108.50</p>
+                    <button class="minus">-</button>
+                    <p id="ceramic-vase-quantity-1" class="vase-quantity">0</p>
+                    <button class="plus">+</button>
+                </div>
+                <div id="ceramic-vase2" class="products ceramic">
+                    <p class="vase-name">Mystical</p>
+                    <img src="ceramic_vase2.png" alt="photo of a vase" class="product-img">
+                    <p class="vase-price">$108.50</p>
+                    <button class="minus">-</button>
+                    <p id="ceramic-vase-quantity-2" class="vase-quantity">0</p>
+                    <button class="plus">+</button>
+                </div>
+                <div id="cement-vase1" class="products cement">
+                    <p class="vase-name">Mayane Starlight</p>
+                    <img src="cement_vase1.png" alt="photo of a cement vase" class="product-img">
+                    <p class="vase-price">$98.50</p>
+                    <button class="minus">-</button>
+                    <p id="cement-vase-quantity-1" class="vase-quantity">0</p>
+                    <button class="plus">+</button>
+                </div>
+                <div id="cement-vase2" class="products cement">
+                    <p class="vase-name">Bryenne Waterfall</p>
+                    <img src="cement_vase2.png" alt="photo of a cement vase" class="product-img">
+                    <p class="vase-price">$98.50</p>
+                    <button class="minus">-</button>
+                    <p id="cement-vase-quantity-2" class="vase-quantity">0</p>
+                    <button class="plus">+</button>
+                </div>
+                <div id="wooden-vase1" class="products wooden">
+                    <p class="vase-name">Treehouse</p>
+                    <img src="wooden_vase1.png" alt="photo of a wooden vase" class="product-img">
+                    <p class="vase-price">$150.00</p>
+                    <button class="minus">-</button>
+                    <p id="wooden-vase-quantity-1" class="vase-quantity">0</p>
+                    <button class="plus">+</button>
+                </div>
+                <div id="wooden-vase2" class="products wooden">
+                    <p class="vase-name">Soft Pine Vase</p>
+                    <img src="wooden_vase2.png" alt="photo of a wooden vase" class="product-img">
+                    <p class="vase-price">$150.00</p>
+                    <button class="minus">-</button>
+                    <p id="wooden-vase-quantity-2" class="vase-quantity">0</p>
+                    <button class="plus">+</button>
+                </div>
 
-        </section>
+            </section>
 
-    </main>
-    <!--Fixed side bar for checkout that moves within pages-->
-    <aside>
-        <h2>Shopping Cart</h2>
-        <h3>Items:</h3>
-        <ul id="cart-items"></ul>
+        </main>
+        <!--Fixed side bar for checkout that moves within pages-->
+        <aside>
+            <h2>Shopping Cart</h2>
+            <h3>Items:</h3>
+            <ul id="cart-items"></ul>
 
-        <p>Subtotal: <span id="subtotal-value">$0.00</span></p>
-        <p>Tax: <span id="tax-value">$0.00</span></p>
-        <p>Total: <span id="total-value">$0.00</span></p>
-        <button class="checkout">Checkout</button>
+            <p>Subtotal: <span id="subtotal-value">$0.00</span></p>
+            <p>Tax: <span id="tax-value">$0.00</span></p>
+            <p>Total: <span id="total-value">$0.00</span></p>
+            <button class="checkout">Checkout</button>
 
-    </aside>
+        </aside>
+    </div>
 
 </body>
 
