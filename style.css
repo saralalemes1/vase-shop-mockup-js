@@ -5,5 +5,21 @@
 .product-img {
     height: 350px;
     width: 350px;
-    object-fit: cover; /*Crops the image to fit the square without distorting them*/
+    object-fit: cover; /* crops the image to fit the square without distorting them*/
+    border-radius: 10px;
+    border: 1px solid black;
+   
+}
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* add multiple selector at once by separating them with commas*/
+.vase-name,
+.minus,
+.plus,
+.vase-price,
+.vase-quantity {
+    font-size: 25px;
 }
