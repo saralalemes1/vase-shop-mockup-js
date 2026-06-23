@@ -1,11 +1,12 @@
 #products {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
     gap: 30px;
 }
 .product-img {
     height: 350px;
-    width: 350px;
+    width: 100%;/* using % instead of fixed size (px) is best for responsive design*/
+    max-width: 350px; 
     object-fit: cover; /* crops the image to fit the square without distorting them*/
     border-radius: 10px;
     border: 1px solid black;
@@ -32,7 +33,7 @@ aside {
     width:200px;
 }
 main {
-    flex: 1;
+    flex: 1;/* fill remaining space within the page*/
 }
 body {
     padding: 30px;
