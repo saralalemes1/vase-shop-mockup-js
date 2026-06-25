@@ -64,10 +64,20 @@ nav ul {
     gap: 50px;
     padding:30px;
     list-style: none;
-    
 }
 
 nav a {
     text-decoration: none;
-    
+}
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    width: 80%;
+}
+.quantity-controls {
+    display: flex;
+    align-items:center;
+    gap: 10px;
 }
