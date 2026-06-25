@@ -41,7 +41,7 @@
 .plus,
 .vase-price,
 .vase-quantity {
-    font-size: 25px;
+    font-size: 16px;
 }
 #content-wrapper {
     display: flex;
@@ -54,4 +54,20 @@ main {
 }
 body {
     padding: 30px;
+    font-family: "Castoro Titling", serif;
+}
+/* descendent selector to target only the <ul> inside <nav> */
+nav ul {
+    display: flex;
+    font-size: 20px;
+    flex: 1;
+    gap: 50px;
+    padding:30px;
+    list-style: none;
+    
+}
+
+nav a {
+    text-decoration: none;
+    
 }
