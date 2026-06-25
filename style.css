@@ -1,8 +1,25 @@
+/* default size (desktop size)*/
 #products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
+/*Tablet size*/
+@media screen and (max-width: 991px){
+    #products {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+/*Phone size*/
+@media screen and (max-width: 767px){
+    #products {
+        grid-template-columns: 1fr
+    }
+
+}
+
+
 .product-img {
     height: 350px;
     width: 100%;/* using % instead of fixed size (px) is best for responsive design*/
