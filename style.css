@@ -60,6 +60,22 @@
 .vase-quantity {
     font-size: 16px;
 }
+.checkout {
+    background-color: var(--smoky-rose);
+    color: var(--text-dark);
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+}
+/*:hover is a pseudo-class in CSS that applies styles only when the user hovers their mouse over an element*/
+.checkout:hover {
+    background-color: var(--stone-brown);
+}
+.checkout:active {
+    background-color: var(--smoky-rose);
+}
 #content-wrapper {
     display: flex;
 }
