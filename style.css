@@ -1,3 +1,13 @@
+/* :root is a container that stores global variables so they can be available within the whole code; but you can use --variable inside another selector, however it'll only be available within that specific element*/
+:root {
+    /* css variables (--) used to simplify the color in the whole website*/
+    --stone-brown: #5F5449;
+    --smoky-rose: #9B6A6C;
+    --rosy-taupe: #B09398;
+    --background: #F5F0EB;
+    --text-dark: #2C1810;
+}
+
 /* default size (desktop size)*/
 #products {
     display: grid;
@@ -8,6 +18,12 @@
 @media screen and (max-width: 991px){
     #products {
         grid-template-columns: repeat(2, 1fr)
+    }
+    
+    #content-wrapper {
+    
+        flex-direction:column;
+        
     }
 }
 
@@ -48,13 +64,17 @@
 }
 aside {
     width:200px;
+
 }
+
 main {
     flex: 1;/* fill remaining space within the page*/
 }
 body {
     padding: 30px;
     font-family: "Castoro Titling", serif;
+    background-color: var(--background);
+    color: var(--text-dark);
 }
 /* descendent selector to target only the <ul> inside <nav> */
 nav ul {
@@ -64,10 +84,15 @@ nav ul {
     gap: 50px;
     padding:30px;
     list-style: none;
+    
 }
 
 nav a {
     text-decoration: none;
+    color: var(--stone-brown);
+    font-weight: 700; /* bold font*/
+    
+    
 }
 .card-footer {
     display: flex;
