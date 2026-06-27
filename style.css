@@ -61,20 +61,22 @@
     font-size: 16px;
 }
 .checkout {
-    background-color: var(--smoky-rose);
+    background-color: var(--rosy-taupe);
     color: var(--text-dark);
     padding: 10px 20px;
-    font-weight: 700;
     font-size: 16px;
     border-radius: 10px;
-    border: none;
+    border-color: var(--stone-brown);
+    border: 1px solid;
+    font-family: "Castoro Titling", serif;
 }
 /*:hover is a pseudo-class in CSS that applies styles only when the user hovers their mouse over an element*/
 .checkout:hover {
     background-color: var(--stone-brown);
 }
 .checkout:active {
-    background-color: var(--smoky-rose);
+    background-color: var(--rosy-taupe);
+    
 }
 #content-wrapper {
     display: flex;
@@ -101,15 +103,12 @@ nav ul {
     gap: 50px;
     padding:30px;
     list-style: none;
-    
 }
 
 nav a {
     text-decoration: none;
     color: var(--stone-brown);
-    font-weight: 700; /* bold font*/
-    
-    
+    font-weight: 700; /* bold font*/ 
 }
 .card-footer {
     display: flex;
@@ -122,4 +121,19 @@ nav a {
     display: flex;
     align-items:center;
     gap: 10px;
+}
+#sort-dropdown-menu {
+    display: flex;
+    gap: 20px;
+       
+}
+#sort-dropdown-menu select {
+    font-size: 16px;
+    font-family: "Castoro Titling", serif;
+    padding: 5px 10px;
+    background-color: var(--rosy-taupe);
+    color: var(--text-dark);
+    border-radius: 10px;
+    border-color: var(--stone-brown);
+   
 }
